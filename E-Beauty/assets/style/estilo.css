@@ -323,6 +323,7 @@ body {
 .solucao-card {
     background-color: var(--claro-cartoes);
     padding: 30px;
+    width: px;
     border-radius: var(--card-arredondamento);
     box-shadow: var(--claro-hover) 0px 4px 7px;
 }
@@ -343,15 +344,54 @@ body {
 .solucao-card li {
     margin-bottom: 10px;
     font-size: 1.1rem;
-    color: var(--claro-texto);
+    color:black;
 }
-
+.solucao-card a{
+    color: #2D2D2D;
+    display: flex;
+}
 .solucao-card li::before {
     content: '✓';
     color: var(--claro-botoes);
     font-weight: var(--bold);
     margin-right: 10px;
 }
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    border-radius: var(--card-arredondamento);
+    box-shadow: var(--box-shadow) 0px 4px 7px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* caso queira quebrar linha */
+}
+
+.card {
+    width: 250px;
+    background: #ffffff;
+    padding: 35px 20px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+    
+}
+
+.card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
 
 /* SEÇÃO CONTATO - Adaptado de .contact-section */
 .secao-contato {
@@ -454,14 +494,10 @@ footer {
 
 
 .logo-footer img {
-    width: 100px;
+    width: 150px;
     height: auto;
-filter: invert(1);
-    /* Inverte cores */
-    filter: grayscale(100%) contrast(100%);
-    /* Preto e branco com mais contraste */
-    filter: brightness(0) contrast(100%);
-    /* Totalmente preto */
+
+  
 }
 
 .logo-footer nav {
@@ -524,8 +560,6 @@ footer hr {
     font-size: 0.9rem;
     color: var(--claro-depoimentos);
 }
-
-
 
 /* =====================
    RESPONSIVIDADE (Adaptada)
